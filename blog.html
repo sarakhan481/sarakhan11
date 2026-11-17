@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design Blog & Decor Guides - DecorNest Pakistan</title>
+  <meta name="description" content="Explore expert interior design articles, budget makeover guides, furniture buying tips, and room-by-room decor inspiration tailored for Pakistani homes.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-notice">
+        <span class="top-bar-flag">🇵🇰</span>
+        <span>DecorNest Pakistan — Transform Your Space, Inspire Your Living.</span>
+      </div>
+      <div class="top-bar-links">
+        <span><i class="fa-regular fa-clock"></i> Updated for 2026</span>
+        <a href="contact.html"><i class="fa-regular fa-envelope"></i> Contact Editorial</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="DecorNest Pakistan Home">
+          <div class="brand-icon-wrap">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">DecorNest <span>Pakistan</span></span>
+            <span class="brand-tagline">Transform Your Space</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="bedroom-decor.html" class="nav-link">Bedroom Decor</a>
+          <a href="living-room.html" class="nav-link">Living Room</a>
+          <a href="furniture.html" class="nav-link">Furniture</a>
+          <a href="curtains-rugs.html" class="nav-link">Curtains & Rugs</a>
+          <a href="blog.html" class="nav-link active">Blog</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <a href="#blogSearchInput" class="search-trigger-btn" title="Focus Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+          <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand-text">
+        <span class="brand-name">DecorNest <span>PK</span></span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close mobile menu">&times;</button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="bedroom-decor.html" class="mobile-nav-link">Bedroom Decor</a>
+      <a href="living-room.html" class="mobile-nav-link">Living Room Decor</a>
+      <a href="furniture.html" class="mobile-nav-link">Furniture</a>
+      <a href="curtains-rugs.html" class="mobile-nav-link">Curtains & Rugs</a>
+      <a href="blog.html" class="mobile-nav-link active">Blog & Guides</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="separator"><i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i></span>
+        <span class="current">Blog</span>
+      </div>
+      <span class="section-badge badge-olive">The Decor Journal</span>
+      <h1 class="page-hero-title">Interior Design Guides & Inspiration</h1>
+      <p class="page-hero-desc">In-depth decorating articles, spatial blueprints, budget strategies, and color palettes designed specifically for Pakistani homeowners and apartment dwellers.</p>
+    </div>
+  </section>
+
+  <!-- SECTION: SEARCH & FILTERS -->
+  <section class="section-padding-sm" style="background-color: var(--color-surface); border-bottom: 1px solid var(--color-surface-sand);">
+    <div class="container">
+      <div class="blog-filter-section">
+        <!-- Live Search Bar -->
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+          <input type="text" id="blogSearchInput" class="search-input" placeholder="Search guides by title, room, or topic (e.g. bedroom, budget, curtains)..." aria-label="Search articles">
+        </div>
+
+        <!-- Category Pills -->
+        <div class="category-filter-pills" role="tablist">
+          <button class="filter-pill active" data-filter="all">All Articles (8)</button>
+          <button class="filter-pill" data-filter="bedroom">Bedroom Decor</button>
+          <button class="filter-pill" data-filter="living-room">Living Room</button>
+          <button class="filter-pill" data-filter="furniture">Furniture</button>
+          <button class="filter-pill" data-filter="curtains">Curtains & Rugs</button>
+          <button class="filter-pill" data-filter="budget">Budget Ideas</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: ARTICLES GRID -->
+  <section class="section-padding">
+    <div class="container">
+      <!-- Empty Search Fallback -->
+      <div id="blogNoResults" style="display: none; text-align: center; padding: 4rem 1rem;">
+        <i class="fa-regular fa-face-meh" style="font-size: 3rem; color: var(--color-text-light); margin-bottom: 1rem;"></i>
+        <h3>No matching guides found</h3>
+        <p>Try searching for terms like "bedroom", "budget", "curtains", or "sofa".</p>
+      </div>
+
+      <div class="grid grid-3" id="blogGrid">
+
+        <!-- Article 1 -->
+        <article class="blog-card blog-search-item" data-category="bedroom budget">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80" alt="Modern bedroom on a budget in Pakistan">
+            <span class="blog-card-category">Budget Decor</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Bedroom</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/bedroom-budget.html">Modern Bedroom Decoration Ideas on a Budget in Pakistan</a>
+            </h3>
+            <p class="blog-card-excerpt">Discover how subtle color changes, warm ambient lighting, and smart local furniture choices can revitalize your bedroom without excessive spending.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <a href="blogs/bedroom-budget.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card blog-search-item" data-category="bedroom">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Small bedroom decoration ideas saving space">
+            <span class="blog-card-category">Small Spaces</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Space Saving</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/small-bedroom.html">10 Small Bedroom Decoration Ideas That Save Space</a>
+            </h3>
+            <p class="blog-card-excerpt">Maximize compact 5-marla bedrooms with vertical shelving, hydraulic storage beds, floating side tables, and reflective mirror positioning.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <a href="blogs/small-bedroom.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card blog-search-item" data-category="curtains">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" alt="Best curtain designs for Pakistani homes">
+            <span class="blog-card-category">Curtains & Rugs</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Window Decor</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/curtain-designs.html">Best Curtain Designs for Pakistani Homes</a>
+            </h3>
+            <p class="blog-card-excerpt">A complete homeowner guide to choosing dust-resistant fabrics, thermal blackout liners for harsh summers, and ceiling-to-floor drapes that maximize room height.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 5 min read</span>
+              <a href="blogs/curtain-designs.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card blog-search-item" data-category="living-room">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Minimalist living room designs for modern homes">
+            <span class="blog-card-category">Living Room</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Minimalism</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/living-room-designs.html">Minimalist Living Room Designs for Modern Homes</a>
+            </h3>
+            <p class="blog-card-excerpt">Say goodbye to heavy, cluttered lounges. Explore minimalist design principles that emphasize calming negative space, functional storage, and neutral warmth.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 7 min read</span>
+              <a href="blogs/living-room-designs.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card blog-search-item" data-category="furniture budget">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Affordable furniture ideas in Pakistan">
+            <span class="blog-card-category">Furniture</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Carpentry</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/affordable-furniture.html">Affordable Furniture Ideas in Pakistan</a>
+            </h3>
+            <p class="blog-card-excerpt">How to commission bespoke local carpentry in Sheesham and Ash wood, identify durable high-resilience foams, and buy stylish modular sofas on a budget.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <a href="blogs/affordable-furniture.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card blog-search-item" data-category="living-room">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="How to decorate a small living room">
+            <span class="blog-card-category">Living Room</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>TV Lounge</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/small-living-room.html">How to Decorate a Small Living Room: Layouts & Hacks</a>
+            </h3>
+            <p class="blog-card-excerpt">Transform compact Pakistani TV lounges and portion drawing rooms with L-shaped sectionals, floating media consoles, and natural lighting tricks.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <a href="blogs/small-living-room.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="blog-card blog-search-item" data-category="bedroom furniture">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Modern bedroom furniture ideas for Pakistani homes">
+            <span class="blog-card-category">Furniture</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Bedroom</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/bedroom-furniture.html">Modern Bedroom Furniture Ideas for Pakistani Homes</a>
+            </h3>
+            <p class="blog-card-excerpt">Explore contemporary low-profile platform beds, full-height sliding wardrobes, and minimalist dressers that keep master bedrooms airy and serene.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 5 min read</span>
+              <a href="blogs/bedroom-furniture.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 8 -->
+        <article class="blog-card blog-search-item" data-category="bedroom">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80" alt="How to choose the perfect color combination for bedroom">
+            <span class="blog-card-category">Color Schemes</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Nov 2026</span>
+              <span>•</span>
+              <span>Color Design</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="blogs/bedroom-colors.html">How to Choose the Perfect Color Combination for Your Bedroom</a>
+            </h3>
+            <p class="blog-card-excerpt">Master the 60-30-10 color proportion rule with warm beige, soothing olive, and terracotta accents tailored for restful Pakistani sleep sanctuaries.</p>
+            <div class="blog-card-footer">
+              <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 6 min read</span>
+              <a href="blogs/bedroom-colors.html" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-grid">
+          <!-- Column 1: Brand Info -->
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+              <div class="brand-icon-wrap" style="background-color: var(--color-accent);">
+                <i class="fa-solid fa-couch"></i>
+              </div>
+              <div class="brand-text">
+                <span class="brand-name" style="color: #FFFFFF;">DecorNest <span>PK</span></span>
+                <span class="brand-tagline" style="color: #D6CBC1;">Inspire Your Living</span>
+              </div>
+            </a>
+            <p>DecorNest Pakistan is an informational interior design hub dedicated to making contemporary, elegant, and comfortable home decor accessible for every Pakistani household.</p>
+            <div class="social-links">
+              <a href="#" class="social-icon-btn" aria-label="DecorNest on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="DecorNest on Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="DecorNest on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="DecorNest on YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About DecorNest</a></li>
+              <li><a href="blog.html" class="footer-link">Blog & Editorial</a></li>
+              <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Categories -->
+          <div>
+            <h4 class="footer-col-title">Explore Categories</h4>
+            <ul class="footer-links-list">
+              <li><a href="bedroom-decor.html" class="footer-link">Bedroom Decor</a></li>
+              <li><a href="living-room.html" class="footer-link">Living Room Decor</a></li>
+              <li><a href="furniture.html" class="footer-link">Furniture & Carpentry</a></li>
+              <li><a href="curtains-rugs.html" class="footer-link">Curtains & Rugs</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Popular Guides -->
+          <div>
+            <h4 class="footer-col-title">Popular Guides</h4>
+            <ul class="footer-links-list">
+              <li><a href="blogs/bedroom-budget.html" class="footer-link">Budget Bedroom Makeover</a></li>
+              <li><a href="blogs/small-bedroom.html" class="footer-link">10 Small Bedroom Ideas</a></li>
+              <li><a href="blogs/curtain-designs.html" class="footer-link">Curtain Fabrics for Pakistan</a></li>
+              <li><a href="blogs/living-room-designs.html" class="footer-link">Minimalist Living Rooms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>© 2026 DecorNest Pakistan. Developed for University Semester Project. All rights reserved.</p>
+          <p>Currency: Pakistani Rupees (PKR) • Designed for Modern Pakistani Living</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
